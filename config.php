@@ -1,6 +1,6 @@
 <?php
 
-define("SITE_TITLE", "Personal Jesus!");
+define("SITE_TITLE", "Personal Page");
 
 
 $links = [
