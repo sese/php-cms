@@ -1,6 +1,6 @@
 <?php
 
-define("SITE_TITLE", "Personal Page");
+define("SITE_TITLE", "Edy's Page");
 
 
 $links = [
