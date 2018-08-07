@@ -26,9 +26,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: wget https://getcomposer.org/installer
-      - run: php installer --filename=composer
-      - run: composer install -n --prefer-dist
+      - run: wget https://getcomposer.org/installer && php installer --filename=composer && composer install -n --prefer-dist
 
       - save_cache:
           paths:
