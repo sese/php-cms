@@ -1,5 +1,13 @@
 {
     "name": "sese/php-cms",
     "description": "test app",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
 }
