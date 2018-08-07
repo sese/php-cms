@@ -17,6 +17,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - wget https://getcomposer.org/installer
+      - php installer --filename=composer
+
       - checkout
 
       # Download and cache dependencies
@@ -34,4 +37,4 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
 
       # run tests!
-      - run: phpunit
+      - run: composer -v
